@@ -1,0 +1,75 @@
+\documentclass[letterpaper,12pt]{article}
+\usepackage{tabularx} % extra features for tabular environment
+\usepackage{amsmath}  % improve math presentation
+\usepackage{graphicx} % takes care of graphic including machinery
+
+\usepackage[margin=1in,letterpaper]{geometry} % decreases margins
+\usepackage{cite} % takes care of citations
+\usepackage[final]{hyperref} % adds hyper links inside the generated pdf file
+\hypersetup{
+	colorlinks=true,       % false: boxed links; true: colored links
+	linkcolor=blue,        % color of internal links
+	citecolor=blue,        % color of links to bibliography
+	filecolor=magenta,     % color of file links
+	urlcolor=blue         
+}
+\usepackage{blindtext}
+%++++++++++++++++++++++++++++++++++++++++
+\begin{document}
+
+\title{MATRIX THEORY}
+\author{ALOK RANJAN}
+\date{\today}
+\maketitle
+
+\section{Question 43, P.59}
+The perpendicular from the origin to the line\\
+(-m 1)x=c\\
+meets it at the point (-1 2). Find the values of m and c.
+
+\subsection{Python Code $\&$ Latex Code Links }
+\fbox{\parbox{\textwidth}{
+	1.Python Code:-\\
+	https://github.com/Alok0895/Assignment1/blob/master/Assignment1.py}\\}\\
+\fbox{\parbox{\textwidth}{2.Latex Code:-\\
+https://github.com/Alok0895/Assignment1/blob/master/Assignment1.tex}}\\
+
+
+\subsection{Explanation}
+The line through the origin perpendicular to the given line is in the form of:-\\ 
+$L_{1}\implies\hspace{10}(-m\hspace{5} 1)x=c$\\ Direction vector of line $L_{2}$ perpendicular to $L_{1}$ should be ($1\atop m$) such that the equation of line should be\\
+$L_{2}\implies\hspace{10} ({1\atop m})^{T}\left(x-\left({-1\atop2}\right)\right)=0$\\
+Therefore $L_{2}$ is,\\
+\begin{equation}
+\implies (1\hspace{5}m)x-(1\hspace{5}m)\left({-1\atop2}\right)=0    
+\end{equation}
+
+Since it passes through (0,0) therefore:-\\
+\begin{align}
+(1\hspace{5}m)\left({0\atop0}\right)-(1\hspace{5}m)\left({-1\atop2}\right)&=0\\  
+\implies(-1+2m) &= 0\notag\\
+\implies m &= \frac{1}{2}\notag\\
+\implies m &=0.5
+\end{align}
+Now from equation(3) and the knowledge that $(-1,2)$ lies on L{}, we put value of m in line $L_{1}$ such that:-
+\begin{align}
+    (-0.5\hspace{5} 1)x &= c\\
+    \implies(-0.5\hspace{5} 1)\left({-1\atop2}\right)&=c\notag\\
+    \implies c&=2.5
+\end{align}
+
+Hence, the value of m and c are obtained from (2) and (3) as 0.5 and 2.5 respectively.\\
+
+\begin{figure}
+    \centering
+    \includegraphics[width=18cm]{alok_plot.PNG}
+    \caption{Lines perpendicular at (-1,2)}
+    \label{fig:my_l}  
+\end{figure}
+    
+
+
+
+
+
+\end{document}
